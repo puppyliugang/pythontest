@@ -1,0 +1,7 @@
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+Werkzeug==2.3.7
+captcha==0.4
+Pillow==9.5.0
+qrcode==7.4.2
+redis==5.0.1 

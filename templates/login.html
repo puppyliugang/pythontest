@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="language-selector">
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+            <option value="zh">中文</option>
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+            <option value="th">ไทย</option>
+            <option value="my">မြန်မာ</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="login-box">
+            <div class="tabs">
+                <span class="tab active" data-tab="password" data-i18n="password_login">密码登录</span>
+                <span class="tab" data-tab="qrcode" data-i18n="qrcode_login">二维码登录</span>
+            </div>
+            
+            <!-- 密码登录表单 -->
+            <form id="passwordLoginForm" class="login-form active">
+                <div class="input-group phone-group">
+                    <select id="countryCode" class="country-code">
+                        <option value="+86">+86</option>
+                        <option value="+66">+66</option>
+                        <option value="+95">+95</option>
+                        <option value="+81">+81</option>
+                        <option value="+1">+1</option>
+                    </select>
+                    <input type="tel" id="phone" data-i18n="phone_placeholder" placeholder="请输入手机号码" required pattern="[0-9]*">
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" data-i18n="password_placeholder" placeholder="请输入密码" required>
+                </div>
+                
+                <div class="verification-group">
+                    <input type="text" id="verificationCode" data-i18n="verification_placeholder" placeholder="验证码" required>
+                    <img src="/api/captcha" alt="验证码" onclick="this.src='/api/captcha?'+Math.random()">
+                </div>
+                
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox" id="remember">
+                        <span data-i18n="remember_me">记住我</span>
+                    </label>
+                    <a href="#" class="forgot-password" data-i18n="forgot_password">忘记密码？</a>
+                </div>
+                
+                <button type="submit" class="login-btn" data-i18n="login_button">登录</button>
+            </form>
+
+            <!-- 二维码登录区域 -->
+            <div id="qrcodeLoginForm" class="login-form">
+                <div class="qrcode-container">
+                    <div id="qrcode"></div>
+                    <p class="qrcode-tip" data-i18n="scan_tip">请使用APP扫码登录</p>
+                    <button type="button" class="refresh-qrcode" onclick="refreshQRCode()" data-i18n="refresh_qrcode">
+                        刷新二维码
+                    </button>
+                </div>
+            </div>
+
+            <div class="other-login">
+                <a href="#" class="register" data-i18n="register">注册</a>
+            </div>
+            
+            <div class="other-methods">
+                <span data-i18n="other_login_methods">其他登录方式</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 添加 qrcode.js 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/i18n.js') }}"></script>
+
+    <script>
+    function switchTab(tabName) {
+        // 移除所有标签页和表单的活动状态
+        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+        document.querySelectorAll('.login-form').forEach(form => form.classList.remove('active'));
+        
+        // 添加新的活动状态
+        document.querySelector(`.tab[data-tab="${tabName}"]`).classList.add('active');
+        document.getElementById(`${tabName}LoginForm`).classList.add('active');
+        
+        // 如果切换到二维码登录，生成二维码
+        if (tabName === 'qrcode') {
+            generateQRCode();
+        }
+    }
+    </script>
+</body>
+</html> 

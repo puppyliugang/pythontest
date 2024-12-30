@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    position: relative;
+    min-height: 450px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e8e8e8;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.tab {
+    padding: 12px 0;
+    color: #666;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.tab.active {
+    color: #1890ff;
+    font-weight: 500;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #1890ff;
+}
+
+.tab:hover {
+    color: #40a9ff;
+}
+
+.input-group {
+    margin-bottom: 24px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    outline: none;
+}
+
+.verification-group {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.verification-group input {
+    flex: 1;
+}
+
+.verification-group img {
+    height: 42px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    color: #666;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #40a9ff;
+}
+
+.other-login {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.other-login a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.other-methods {
+    margin-top: 24px;
+    text-align: center;
+    color: #999;
+}
+
+.forgot-password {
+    color: #1890ff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #40a9ff;
+}
+
+.language-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-selector select {
+    padding: 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.language-selector select:hover {
+    border-color: #40a9ff;
+}
+
+.language-selector select:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.phone-group {
+    display: flex;
+    gap: 8px;
+}
+
+.country-code {
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.country-code:hover,
+.country-code:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    outline: none;
+}
+
+.phone-group input[type="tel"] {
+    flex: 1;
+}
+
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    outline: none;
+}
+
+.qr-login-box {
+    text-align: center;
+}
+
+.qr-code-container {
+    padding: 20px;
+}
+
+.qr-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+
+.qr-code img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.qr-tip {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.qr-subtip {
+    color: #999;
+    font-size: 12px;
+}
+
+.login-form {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.login-form.active {
+    display: block;
+    opacity: 1;
+    position: relative;
+}
+
+.qrcode-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+    height: 100%;
+}
+
+#qrcode {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#qrcode img {
+    max-width: 100%;
+    height: auto;
+} 
