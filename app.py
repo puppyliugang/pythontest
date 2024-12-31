@@ -12,7 +12,8 @@ import random
 import string
 import os
 from config import (FLASK_CONFIG, REDIS_CONFIG, QRCODE_CONFIG, 
-                   CAPTCHA_CONFIG, TEST_ACCOUNT, LOG_CONFIG)
+                   CAPTCHA_CONFIG, TEST_ACCOUNT, LOG_CONFIG, SQLALCHEMY_DATABASE_URI, SQLALCHEMY_TRACK_MODIFICATIONS)
+from models import db, User, LoginLog
 
 # 配置日志
 logger = logging.getLogger(__name__)
@@ -40,6 +41,8 @@ logger.info("Application starting...")
 
 app = Flask(__name__)
 app.config.update(FLASK_CONFIG)
+app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = SQLALCHEMY_TRACK_MODIFICATIONS
 
 # 初始化 Redis 客户端
 try:
@@ -54,6 +57,21 @@ except redis.ConnectionError as e:
 # 初始化验证码生成器
 image_captcha = ImageCaptcha(width=CAPTCHA_CONFIG['WIDTH'], 
                            height=CAPTCHA_CONFIG['HEIGHT'])
+
+# 初始化数据库
+db.init_app(app)
+
+# 创建数据库表
+with app.app_context():
+    db.create_all()
+    
+    # 创建测试用户（如果不存在）
+    if not User.query.filter_by(phone=TEST_ACCOUNT['PHONE']).first():
+        test_user = User(phone=TEST_ACCOUNT['PHONE'])
+        test_user.set_password(TEST_ACCOUNT['PASSWORD'])
+        test_user.nickname = '测试用户'
+        db.session.add(test_user)
+        db.session.commit()
 
 @app.route('/')
 def index():
@@ -108,37 +126,63 @@ def get_captcha():
 def login():
     try:
         data = request.json
-        
-        # 验证验证码
-        stored_captcha = redis_client.get(f'captcha:{session.id}')
-        if not stored_captcha or stored_captcha.lower() != data.get('verificationCode', '').lower():
-            return jsonify({
-                'success': False,
-                'message': '验证码错误或已过期'
-            })
-
-        # 验证手机号和密码
         phone = data.get('phone')
         password = data.get('password')
         
-        if phone == TEST_ACCOUNT['PHONE'] and password == TEST_ACCOUNT['PASSWORD']:
-            session['user_id'] = '1'
-            if data.get('remember'):
-                session.permanent = True
+        # 验证验证码
+        captcha_id = session.get('captcha_id')
+        if not captcha_id:
             return jsonify({
-                'success': True,
-                'message': '登录成功'
+                'success': False,
+                'message': 'invalid_captcha'
             })
         
+        stored_captcha = redis_client.get(f'captcha:{captcha_id}')
+        if not stored_captcha or stored_captcha.decode().lower() != data.get('verificationCode', '').lower():
+            return jsonify({
+                'success': False,
+                'message': 'invalid_captcha'
+            })
+            
+        # 查找用户
+        user = User.query.filter_by(phone=phone).first()
+        if user and user.check_password(password):
+            # 记录登录日志
+            log = LoginLog(
+                user_id=user.id,
+                ip_address=request.remote_addr,
+                user_agent=request.user_agent.string,
+                login_type='password',
+                status=True
+            )
+            db.session.add(log)
+            
+            # 更新最后登录时间
+            user.last_login = datetime.utcnow()
+            db.session.commit()
+            
+            # 设置session
+            session['user_id'] = user.id
+            if data.get('remember'):
+                session.permanent = True
+                
+            return jsonify({
+                'success': True,
+                'message': 'login_success',
+                'user': user.to_dict()
+            })
+            
         return jsonify({
             'success': False,
-            'message': '手机号或密码错误'
+            'message': 'invalid_credentials'
         })
+        
     except Exception as e:
         logger.error(f"Login failed: {e}")
+        logger.error(traceback.format_exc())
         return jsonify({
             'success': False,
-            'message': '服务器错误'
+            'message': 'server_error'
         }), 500
 
 @app.route('/qr-login')

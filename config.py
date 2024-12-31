@@ -54,4 +54,20 @@ CAPTCHA_CONFIG = {
 TEST_ACCOUNT = {
     'PHONE': '13800138000',
     'PASSWORD': '123456'
-} 
+}
+
+# MySQL 配置
+MYSQL_CONFIG = {
+    'host': '127.0.0.1',
+    'port': 3306,
+    'user': 'root',  # 替换为你的 MySQL 用户名
+    'password': 'Y4yhl9t!',
+    'database': 'test'
+}
+
+# SQLAlchemy 配置
+SQLALCHEMY_DATABASE_URI = (
+    f"mysql+pymysql://{MYSQL_CONFIG['user']}:{MYSQL_CONFIG['password']}@"
+    f"{MYSQL_CONFIG['host']}:{MYSQL_CONFIG['port']}/{MYSQL_CONFIG['database']}"
+)
+SQLALCHEMY_TRACK_MODIFICATIONS = False 
