@@ -1,0 +1,140 @@
+2024-12-31 19:10:04,574 - __main__ - INFO - Application starting...
+2024-12-31 19:10:04,579 - __main__ - INFO - Redis connection successful
+2024-12-31 19:10:04,693 - __main__ - INFO - Starting Flask application...
+2024-12-31 19:10:13,903 - __main__ - INFO - Rendering login page
+2024-12-31 19:10:15,781 - __main__ - INFO - Generating QR code
+2024-12-31 19:10:15,802 - __main__ - INFO - QR code generated successfully
+2024-12-31 19:10:17,813 - __main__ - INFO - Checking QR code status: ef2dbde8-3e23-4dbb-a7f1-e0f48e77bf32
+2024-12-31 19:10:18,104 - __main__ - INFO - Generating QR code
+2024-12-31 19:10:18,127 - __main__ - INFO - QR code generated successfully
+2024-12-31 19:10:19,812 - __main__ - INFO - Checking QR code status: ef2dbde8-3e23-4dbb-a7f1-e0f48e77bf32
+2024-12-31 19:10:20,150 - __main__ - INFO - Checking QR code status: dbd0a1ef-cd9d-4059-a44b-32385e2cb1dc
+2024-12-31 19:10:21,820 - __main__ - INFO - Checking QR code status: ef2dbde8-3e23-4dbb-a7f1-e0f48e77bf32
+2024-12-31 19:10:22,134 - __main__ - INFO - Checking QR code status: dbd0a1ef-cd9d-4059-a44b-32385e2cb1dc
+2024-12-31 19:10:24,848 - __main__ - INFO - Checking QR code status: ef2dbde8-3e23-4dbb-a7f1-e0f48e77bf32
+2024-12-31 19:10:24,849 - __main__ - INFO - Checking QR code status: dbd0a1ef-cd9d-4059-a44b-32385e2cb1dc
+2024-12-31 19:10:25,820 - __main__ - INFO - Checking QR code status: ef2dbde8-3e23-4dbb-a7f1-e0f48e77bf32
+2024-12-31 19:10:26,143 - __main__ - INFO - Checking QR code status: dbd0a1ef-cd9d-4059-a44b-32385e2cb1dc
+2024-12-31 19:10:31,363 - __main__ - INFO - Rendering login page
+2024-12-31 19:10:41,020 - __main__ - ERROR - Login failed: (pymysql.err.OperationalError) (1054, "Unknown column 'language' in 'field list'")
+[SQL: INSERT INTO login_logs (user_id, login_time, ip_address, user_agent, login_type, status, language) VALUES (%(user_id)s, %(login_time)s, %(ip_address)s, %(user_agent)s, %(login_type)s, %(status)s, %(language)s)]
+[parameters: {'user_id': 1, 'login_time': datetime.datetime(2024, 12, 31, 11, 10, 41, 19344), 'ip_address': '127.0.0.1', 'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0', 'login_type': 'password', 'status': 1, 'language': 'zh'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-31 19:10:41,178 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Python312\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Python312\Lib\site-packages\pymysql\connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\pymysql\connections.py", line 822, in _read_query_result
+    result.read()
+  File "C:\Python312\Lib\site-packages\pymysql\connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "C:\Python312\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Python312\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'language' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\cursortest\test1\app.py", line 158, in login
+    db.session.commit()
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 598, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1969, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1256, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1231, in _prepare_impl
+    self.session.flush()
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4312, in flush
+    self._flush(objects)
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4447, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4408, in _flush
+    flush_context.execute()
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1227, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 517, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2344, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Python312\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Python312\Lib\site-packages\pymysql\connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\pymysql\connections.py", line 822, in _read_query_result
+    result.read()
+  File "C:\Python312\Lib\site-packages\pymysql\connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "C:\Python312\Lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Python312\Lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1054, "Unknown column 'language' in 'field list'")
+[SQL: INSERT INTO login_logs (user_id, login_time, ip_address, user_agent, login_type, status, language) VALUES (%(user_id)s, %(login_time)s, %(ip_address)s, %(user_agent)s, %(login_type)s, %(status)s, %(language)s)]
+[parameters: {'user_id': 1, 'login_time': datetime.datetime(2024, 12, 31, 11, 10, 41, 19344), 'ip_address': '127.0.0.1', 'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0', 'login_type': 'password', 'status': 1, 'language': 'zh'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+2024-12-31 19:12:25,206 - __main__ - INFO - Generating QR code
+2024-12-31 19:12:25,218 - __main__ - INFO - QR code generated successfully
+2024-12-31 19:12:27,235 - __main__ - INFO - Checking QR code status: f6586874-6d6a-4287-b856-88b5b9b58fc5
+2024-12-31 19:12:29,228 - __main__ - INFO - Checking QR code status: f6586874-6d6a-4287-b856-88b5b9b58fc5
+2024-12-31 19:12:31,227 - __main__ - INFO - Checking QR code status: f6586874-6d6a-4287-b856-88b5b9b58fc5
+2024-12-31 19:12:49,071 - __main__ - INFO - Checking QR code status: f6586874-6d6a-4287-b856-88b5b9b58fc5
+2024-12-31 19:12:49,230 - __main__ - INFO - Checking QR code status: f6586874-6d6a-4287-b856-88b5b9b58fc5
+2024-12-31 19:12:50,317 - __main__ - INFO - Rendering login page

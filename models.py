@@ -16,6 +16,7 @@ class User(db.Model):
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     last_login = db.Column(db.DateTime)
     status = db.Column(db.SmallInteger, default=1)  # 1: 正常, 0: 禁用
+    language = db.Column(db.String(10), default='zh')  # 添加语言字段
     
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
@@ -30,7 +31,8 @@ class User(db.Model):
             'nickname': self.nickname,
             'avatar': self.avatar,
             'created_at': self.created_at.strftime('%Y-%m-%d %H:%M:%S'),
-            'status': self.status
+            'status': self.status,
+            'language': self.language
         }
 
 class LoginLog(db.Model):
@@ -43,3 +45,4 @@ class LoginLog(db.Model):
     user_agent = db.Column(db.String(256))
     login_type = db.Column(db.String(20))  # password, qrcode
     status = db.Column(db.Boolean, default=True)  # True: 成功, False: 失败 
+    language = db.Column(db.String(10), default='zh')  # 添加语言字段

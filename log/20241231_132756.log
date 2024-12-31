@@ -1,0 +1,26 @@
+2024-12-31 13:27:56,330 - __main__ - INFO - Application starting...
+2024-12-31 13:27:56,334 - __main__ - INFO - Redis connection successful
+2024-12-31 13:27:56,380 - __main__ - INFO - Starting Flask application...
+2024-12-31 13:28:03,742 - __main__ - INFO - Rendering login page
+2024-12-31 13:28:12,463 - __main__ - INFO - Generating QR code
+2024-12-31 13:28:12,492 - __main__ - INFO - QR code generated successfully
+2024-12-31 13:28:14,501 - __main__ - INFO - Checking QR code status: 441fbcf0-2340-4e11-895c-947b8fe640cc
+2024-12-31 13:28:16,506 - __main__ - INFO - Checking QR code status: 441fbcf0-2340-4e11-895c-947b8fe640cc
+2024-12-31 13:28:18,504 - __main__ - INFO - Checking QR code status: 441fbcf0-2340-4e11-895c-947b8fe640cc
+2024-12-31 13:28:20,512 - __main__ - INFO - Checking QR code status: 441fbcf0-2340-4e11-895c-947b8fe640cc
+2024-12-31 13:28:22,508 - __main__ - INFO - Checking QR code status: 441fbcf0-2340-4e11-895c-947b8fe640cc
+2024-12-31 13:28:22,817 - __main__ - INFO - Generating QR code
+2024-12-31 13:28:22,833 - __main__ - INFO - QR code generated successfully
+2024-12-31 13:28:24,509 - __main__ - INFO - Checking QR code status: 441fbcf0-2340-4e11-895c-947b8fe640cc
+2024-12-31 13:28:24,600 - __main__ - INFO - Generating QR code
+2024-12-31 13:28:24,610 - __main__ - INFO - QR code generated successfully
+2024-12-31 13:28:24,852 - __main__ - INFO - Checking QR code status: 902b3527-e511-4bb9-98b7-3e849f8c643b
+2024-12-31 13:28:26,512 - __main__ - INFO - Checking QR code status: 441fbcf0-2340-4e11-895c-947b8fe640cc
+2024-12-31 13:28:26,631 - __main__ - INFO - Checking QR code status: 3b4dc4eb-7732-4116-a9b9-498eb26f8e65
+2024-12-31 13:28:26,856 - __main__ - INFO - Checking QR code status: 902b3527-e511-4bb9-98b7-3e849f8c643b
+2024-12-31 13:28:28,507 - __main__ - INFO - Checking QR code status: 441fbcf0-2340-4e11-895c-947b8fe640cc
+2024-12-31 13:28:28,617 - __main__ - INFO - Checking QR code status: 3b4dc4eb-7732-4116-a9b9-498eb26f8e65
+2024-12-31 13:28:28,844 - __main__ - INFO - Checking QR code status: 902b3527-e511-4bb9-98b7-3e849f8c643b
+2024-12-31 13:28:30,511 - __main__ - INFO - Checking QR code status: 441fbcf0-2340-4e11-895c-947b8fe640cc
+2024-12-31 13:28:30,616 - __main__ - INFO - Checking QR code status: 3b4dc4eb-7732-4116-a9b9-498eb26f8e65
+2024-12-31 13:28:30,847 - __main__ - INFO - Checking QR code status: 902b3527-e511-4bb9-98b7-3e849f8c643b

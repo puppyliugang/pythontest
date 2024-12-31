@@ -1,0 +1,6 @@
+2024-12-31 19:17:50,254 - __main__ - INFO - Application starting...
+2024-12-31 19:17:50,264 - __main__ - INFO - Redis connection successful
+2024-12-31 19:17:50,441 - __main__ - INFO - Starting Flask application...
+2024-12-31 19:17:58,001 - __main__ - INFO - Rendering login page
+2024-12-31 19:17:58,936 - __main__ - INFO - Rendering login page
+2024-12-31 19:17:59,517 - __main__ - INFO - Rendering login page

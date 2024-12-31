@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = {
                 phone: document.getElementById('phone').value,
                 password: document.getElementById('password').value,
-                remember: document.getElementById('remember').checked
+                remember: document.getElementById('remember').checked,
+                language: document.getElementById('languageSelect').value
             };
 
             try {
