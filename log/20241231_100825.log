@@ -1,0 +1,170 @@
+2024-12-31 10:08:25,537 - __main__ - INFO - Application starting...
+2024-12-31 10:08:25,542 - __main__ - INFO - Redis connection successful
+2024-12-31 10:08:25,587 - __main__ - INFO - Starting Flask application...
+2024-12-31 10:08:26,191 - __main__ - INFO - Application starting...
+2024-12-31 10:08:26,195 - __main__ - INFO - Redis connection successful
+2024-12-31 10:08:26,236 - __main__ - INFO - Starting Flask application...
+2024-12-31 10:08:30,197 - __main__ - INFO - Checking QR code status: 4079631d-00de-4b05-8839-8f6445c3df10
+2024-12-31 10:08:30,198 - __main__ - INFO - Checking QR code status: ce1c2248-15e4-4699-b3c4-7cadd3463715
+2024-12-31 10:08:31,431 - __main__ - INFO - Rendering login page
+2024-12-31 10:08:31,485 - __main__ - INFO - Generating new captcha
+2024-12-31 10:08:31,486 - __main__ - DEBUG - Generated captcha text: X47I
+2024-12-31 10:08:31,488 - __main__ - ERROR - Captcha generation failed: cannot open resource
+2024-12-31 10:08:31,517 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\cursortest\test1\app.py", line 117, in get_captcha
+    image = image_captcha.create_captcha_image(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 198, in create_captcha_image
+    images.append(_draw_character(" "))
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 164, in _draw_character
+    font = random.choice(self.truefonts)
+                         ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 121, in truefonts
+    truetype(n, s)
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 996, in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 993, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 248, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: cannot open resource
+
+2024-12-31 10:08:32,568 - __main__ - INFO - Rendering login page
+2024-12-31 10:08:32,593 - __main__ - INFO - Generating new captcha
+2024-12-31 10:08:32,593 - __main__ - DEBUG - Generated captcha text: ACUD
+2024-12-31 10:08:32,599 - __main__ - ERROR - Captcha generation failed: cannot open resource
+2024-12-31 10:08:32,600 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\cursortest\test1\app.py", line 117, in get_captcha
+    image = image_captcha.create_captcha_image(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 199, in create_captcha_image
+    images.append(_draw_character(c))
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 164, in _draw_character
+    font = random.choice(self.truefonts)
+                         ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 121, in truefonts
+    truetype(n, s)
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 996, in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 993, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 248, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: cannot open resource
+
+2024-12-31 10:08:33,101 - __main__ - INFO - Rendering login page
+2024-12-31 10:08:33,127 - __main__ - INFO - Generating new captcha
+2024-12-31 10:08:33,129 - __main__ - DEBUG - Generated captcha text: 83ZQ
+2024-12-31 10:08:33,134 - __main__ - ERROR - Captcha generation failed: cannot open resource
+2024-12-31 10:08:33,136 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\cursortest\test1\app.py", line 117, in get_captcha
+    image = image_captcha.create_captcha_image(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 198, in create_captcha_image
+    images.append(_draw_character(" "))
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 164, in _draw_character
+    font = random.choice(self.truefonts)
+                         ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 121, in truefonts
+    truetype(n, s)
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 996, in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 993, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 248, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: cannot open resource
+
+2024-12-31 10:08:33,479 - __main__ - INFO - Rendering login page
+2024-12-31 10:08:33,508 - __main__ - INFO - Generating new captcha
+2024-12-31 10:08:33,508 - __main__ - DEBUG - Generated captcha text: WPK9
+2024-12-31 10:08:33,514 - __main__ - ERROR - Captcha generation failed: cannot open resource
+2024-12-31 10:08:33,516 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\cursortest\test1\app.py", line 117, in get_captcha
+    image = image_captcha.create_captcha_image(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 199, in create_captcha_image
+    images.append(_draw_character(c))
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 164, in _draw_character
+    font = random.choice(self.truefonts)
+                         ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 121, in truefonts
+    truetype(n, s)
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 996, in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 993, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 248, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: cannot open resource
+
+2024-12-31 10:08:33,754 - __main__ - INFO - Rendering login page
+2024-12-31 10:08:33,781 - __main__ - INFO - Generating new captcha
+2024-12-31 10:08:33,784 - __main__ - DEBUG - Generated captcha text: Q84C
+2024-12-31 10:08:33,786 - __main__ - ERROR - Captcha generation failed: cannot open resource
+2024-12-31 10:08:33,787 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\cursortest\test1\app.py", line 117, in get_captcha
+    image = image_captcha.create_captcha_image(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 198, in create_captcha_image
+    images.append(_draw_character(" "))
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 164, in _draw_character
+    font = random.choice(self.truefonts)
+                         ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 121, in truefonts
+    truetype(n, s)
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 996, in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 993, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 248, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: cannot open resource
+
+2024-12-31 10:08:34,019 - __main__ - INFO - Rendering login page
+2024-12-31 10:08:34,051 - __main__ - INFO - Generating new captcha
+2024-12-31 10:08:34,052 - __main__ - DEBUG - Generated captcha text: F5Q7
+2024-12-31 10:08:34,057 - __main__ - ERROR - Captcha generation failed: cannot open resource
+2024-12-31 10:08:34,059 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\cursortest\test1\app.py", line 117, in get_captcha
+    image = image_captcha.create_captcha_image(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 199, in create_captcha_image
+    images.append(_draw_character(c))
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 164, in _draw_character
+    font = random.choice(self.truefonts)
+                         ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\captcha\image.py", line 121, in truefonts
+    truetype(n, s)
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 996, in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 993, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\PIL\ImageFont.py", line 248, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: cannot open resource
+

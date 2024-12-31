@@ -1,0 +1,69 @@
+2024-12-31 10:09:44,560 - __main__ - INFO - Application starting...
+2024-12-31 10:09:44,565 - __main__ - INFO - Redis connection successful
+2024-12-31 10:09:44,612 - __main__ - INFO - Starting Flask application...
+2024-12-31 10:09:45,199 - __main__ - INFO - Application starting...
+2024-12-31 10:09:45,204 - __main__ - INFO - Redis connection successful
+2024-12-31 10:09:45,247 - __main__ - INFO - Starting Flask application...
+2024-12-31 10:09:47,540 - __main__ - INFO - Rendering login page
+2024-12-31 10:09:47,577 - __main__ - INFO - Generating new captcha
+2024-12-31 10:09:47,578 - __main__ - DEBUG - Generated captcha text: KABJ
+2024-12-31 10:09:47,607 - __main__ - INFO - Captcha generated successfully
+2024-12-31 10:09:48,757 - __main__ - INFO - Rendering login page
+2024-12-31 10:09:48,781 - __main__ - INFO - Generating new captcha
+2024-12-31 10:09:48,782 - __main__ - DEBUG - Generated captcha text: FZEH
+2024-12-31 10:09:48,793 - __main__ - INFO - Captcha generated successfully
+2024-12-31 10:09:49,304 - __main__ - INFO - Rendering login page
+2024-12-31 10:09:49,333 - __main__ - INFO - Generating new captcha
+2024-12-31 10:09:49,334 - __main__ - DEBUG - Generated captcha text: 8E5G
+2024-12-31 10:09:49,340 - __main__ - INFO - Captcha generated successfully
+2024-12-31 10:09:49,768 - __main__ - INFO - Rendering login page
+2024-12-31 10:09:49,796 - __main__ - INFO - Generating new captcha
+2024-12-31 10:09:49,797 - __main__ - DEBUG - Generated captcha text: 3XQR
+2024-12-31 10:09:49,807 - __main__ - INFO - Captcha generated successfully
+2024-12-31 10:34:12,546 - __main__ - INFO - Generating QR code
+2024-12-31 10:34:12,557 - __main__ - INFO - QR code generated successfully
+2024-12-31 10:34:14,569 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:16,565 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:18,565 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:20,859 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:22,890 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:24,883 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:26,892 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:28,886 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:30,881 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:32,892 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:34,891 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:36,881 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:38,889 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:40,889 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:42,880 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:44,885 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:46,882 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:48,886 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:50,884 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:52,889 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:54,882 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:56,890 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:34:58,886 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:00,892 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:02,897 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:04,887 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:06,889 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:08,887 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:10,893 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:12,880 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:14,563 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:16,888 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:18,880 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:20,887 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:22,881 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:24,879 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:26,883 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:28,885 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:30,896 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:32,883 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:34,885 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:36,885 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:38,891 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:40,886 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:42,893 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218

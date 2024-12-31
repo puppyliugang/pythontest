@@ -1,0 +1,111 @@
+2024-12-31 10:35:53,452 - __main__ - INFO - Application starting...
+2024-12-31 10:35:53,456 - __main__ - INFO - Redis connection successful
+2024-12-31 10:35:53,498 - __main__ - INFO - Starting Flask application...
+2024-12-31 10:35:53,515 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:53,518 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:54,880 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:56,574 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
+2024-12-31 10:35:56,737 - __main__ - INFO - Rendering login page
+2024-12-31 10:35:56,772 - __main__ - INFO - Generating new captcha
+2024-12-31 10:35:56,773 - __main__ - DEBUG - Generated captcha text: B4CR
+2024-12-31 10:35:56,799 - __main__ - INFO - Captcha generated successfully
+2024-12-31 10:36:06,669 - __main__ - INFO - Rendering login page
+2024-12-31 10:36:06,712 - __main__ - INFO - Generating new captcha
+2024-12-31 10:36:06,713 - __main__ - DEBUG - Generated captcha text: LW45
+2024-12-31 10:36:06,722 - __main__ - INFO - Captcha generated successfully
+2024-12-31 10:36:09,306 - __main__ - INFO - Rendering login page
+2024-12-31 10:36:09,334 - __main__ - INFO - Generating new captcha
+2024-12-31 10:36:09,335 - __main__ - DEBUG - Generated captcha text: RVOS
+2024-12-31 10:36:09,341 - __main__ - INFO - Captcha generated successfully
+2024-12-31 10:38:43,714 - __main__ - INFO - Rendering login page
+2024-12-31 10:38:44,422 - __main__ - INFO - Rendering login page
+2024-12-31 10:38:44,658 - __main__ - INFO - Rendering login page
+2024-12-31 10:38:44,867 - __main__ - INFO - Rendering login page
+2024-12-31 10:38:53,472 - __main__ - INFO - Generating QR code
+2024-12-31 10:38:53,483 - __main__ - INFO - QR code generated successfully
+2024-12-31 10:38:55,495 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:38:57,503 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:38:59,495 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:01,491 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:03,898 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:05,879 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:07,887 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:09,880 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:11,885 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:13,879 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:15,886 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:17,892 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:19,882 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:21,879 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:23,884 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:25,885 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:27,884 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:29,892 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:31,888 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:33,880 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:35,880 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:37,897 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:39,884 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:41,890 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:43,879 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:45,888 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:47,882 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:49,878 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:51,885 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:53,897 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:55,890 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:57,883 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:39:59,883 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:40:01,883 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:40:03,888 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:40:48,769 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:40:49,491 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:40:51,496 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:40:53,878 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:40:55,885 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:40:57,884 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:40:59,881 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:01,885 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:03,894 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:05,887 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:07,885 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:09,892 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:11,893 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:13,879 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:15,878 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:17,884 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:19,890 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:21,888 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:23,880 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:25,884 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:27,887 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:29,889 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:31,884 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:33,881 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:35,892 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:37,895 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:39,884 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:41,895 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:43,886 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:45,884 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:47,885 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:49,896 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:51,888 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:41:56,895 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:42:27,240 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:42:27,491 - __main__ - INFO - Checking QR code status: 7a268ea2-a2b4-487a-87a3-40a97651fe77
+2024-12-31 10:42:28,670 - __main__ - INFO - Rendering login page
+2024-12-31 10:42:55,286 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/default-avatar.png
+2024-12-31 10:45:32,553 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/default-avatar.png
+2024-12-31 10:49:03,807 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/default-avatar.png
+2024-12-31 10:49:06,528 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/default-avatar.png
+2024-12-31 10:49:45,468 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/default-avatar.png
+2024-12-31 10:51:15,813 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/avatars/default-avatar.jpg
+2024-12-31 10:51:16,420 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/avatars/default-avatar.jpg
+2024-12-31 10:51:16,618 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/avatars/default-avatar.jpg
+2024-12-31 10:51:16,821 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/avatars/default-avatar.jpg
+2024-12-31 10:51:17,177 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/avatars/default-avatar.jpg
+2024-12-31 10:51:17,381 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/avatars/default-avatar.jpg
+2024-12-31 10:52:12,920 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/avatars/default-avatar.jpg
+2024-12-31 10:52:13,728 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/avatars/default-avatar.jpg
+2024-12-31 10:52:13,945 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/avatars/default-avatar.jpg

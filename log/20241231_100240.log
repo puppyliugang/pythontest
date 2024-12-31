@@ -1,0 +1,55 @@
+2024-12-31 10:02:40,544 - __main__ - INFO - Application starting...
+2024-12-31 10:02:40,548 - __main__ - INFO - Redis connection successful
+2024-12-31 10:02:40,592 - __main__ - INFO - Starting Flask application...
+2024-12-31 10:02:43,839 - __main__ - INFO - Rendering login page
+2024-12-31 10:02:43,882 - __main__ - INFO - Generating new captcha
+2024-12-31 10:02:43,883 - __main__ - DEBUG - Generated captcha text: DTZS
+2024-12-31 10:02:43,885 - __main__ - DEBUG - Stored captcha_id in session: 63fba992-ce94-476e-9114-057db4ec23ba
+2024-12-31 10:02:43,916 - __main__ - INFO - Captcha generated successfully
+2024-12-31 10:02:48,259 - __main__ - INFO - Generating QR code
+2024-12-31 10:02:48,277 - __main__ - INFO - QR code generated successfully
+2024-12-31 10:02:50,286 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:02:52,283 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:02:54,291 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:02:56,288 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:02:58,285 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:02:59,092 - __main__ - ERROR - Login failed: 'str' object has no attribute 'decode'
+2024-12-31 10:02:59,095 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\cursortest\test1\app.py", line 141, in login
+    if not stored_captcha or stored_captcha.decode().lower() != data.get('verificationCode', '').lower():
+                             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+
+2024-12-31 10:03:01,300 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:02,285 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:04,294 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:06,878 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:08,880 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:10,896 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:12,885 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:14,878 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:16,890 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:18,884 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:20,885 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:22,889 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:24,886 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:26,879 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:28,898 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:30,890 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:32,894 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:34,888 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:36,889 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:38,888 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:40,893 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:42,890 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:44,886 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:46,879 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:48,887 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:50,896 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:52,885 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:54,884 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:56,881 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:03:58,888 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:04:00,883 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:04:02,890 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8
+2024-12-31 10:04:04,888 - __main__ - INFO - Checking QR code status: 5cab6f93-4dd0-4944-9ae8-fe8f113f90c8

@@ -1,0 +1,76 @@
+2024-12-31 11:44:46,246 - __main__ - INFO - Application starting...
+2024-12-31 11:44:46,250 - __main__ - INFO - Redis connection successful
+2024-12-31 11:44:46,297 - __main__ - INFO - Starting Flask application...
+2024-12-31 11:44:50,509 - __main__ - INFO - Rendering login page
+2024-12-31 11:44:54,724 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:45:08,513 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:45:12,790 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:45:12,791 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:45:12,793 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:45:15,271 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:45:28,274 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:45:31,766 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:45:37,024 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:48:59,695 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:48:59,698 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:48:59,700 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:49:01,285 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:49:06,618 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:49:09,313 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:49:09,315 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:49:09,317 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:49:10,218 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:49:10,221 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:49:10,222 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:49:12,894 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:49:37,120 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:52:53,389 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:52:53,392 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:52:53,394 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:52:54,372 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:52:54,374 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:52:54,375 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:52:55,001 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:52:57,704 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:52:57,705 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:52:57,708 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:52:58,832 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:52:58,834 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:52:58,835 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:52:59,509 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:53:03,946 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:53:14,372 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:53:14,374 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:53:14,375 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:53:16,511 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:53:19,796 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:53:19,799 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:53:19,801 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:53:22,305 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:53:22,307 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:53:22,309 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:53:24,400 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:53:24,402 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:53:24,405 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:53:29,325 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:58:05,574 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 11:58:05,576 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 11:58:05,581 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 11:58:19,753 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:58:23,572 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 11:58:45,833 - __main__ - INFO - Rendering login page
+2024-12-31 11:58:54,014 - __main__ - INFO - Generating QR code
+2024-12-31 11:58:54,037 - __main__ - INFO - QR code generated successfully
+2024-12-31 11:58:56,055 - __main__ - INFO - Checking QR code status: f435aaf0-e138-4f3f-9eb9-eb5616cdecbe
+2024-12-31 11:58:56,768 - __main__ - INFO - Generating QR code
+2024-12-31 11:58:56,778 - __main__ - INFO - QR code generated successfully
+2024-12-31 11:58:58,052 - __main__ - INFO - Checking QR code status: f435aaf0-e138-4f3f-9eb9-eb5616cdecbe
+2024-12-31 11:58:58,792 - __main__ - INFO - Checking QR code status: f6c1b3da-dc73-433e-8e7f-dccc00a24390
+2024-12-31 11:59:00,060 - __main__ - INFO - Checking QR code status: f435aaf0-e138-4f3f-9eb9-eb5616cdecbe
+2024-12-31 11:59:00,793 - __main__ - INFO - Checking QR code status: f6c1b3da-dc73-433e-8e7f-dccc00a24390
+2024-12-31 11:59:01,338 - __main__ - INFO - Generating QR code
+2024-12-31 11:59:01,350 - __main__ - INFO - QR code generated successfully
+2024-12-31 11:59:02,050 - __main__ - INFO - Checking QR code status: f435aaf0-e138-4f3f-9eb9-eb5616cdecbe
+2024-12-31 11:59:02,793 - __main__ - INFO - Checking QR code status: f6c1b3da-dc73-433e-8e7f-dccc00a24390
+2024-12-31 11:59:03,361 - __main__ - INFO - Checking QR code status: 32ac6748-d116-4b29-a39d-cb18e7c1becb
+2024-12-31 11:59:04,044 - __main__ - INFO - Checking QR code status: f435aaf0-e138-4f3f-9eb9-eb5616cdecbe

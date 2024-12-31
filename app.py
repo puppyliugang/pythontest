@@ -134,15 +134,15 @@ def get_captcha():
 @app.route('/api/login', methods=['POST'])
 def login():
     try:
-        data = request.json
-        phone = data.get('phone')
-        password = data.get('password')
+        data = request.json  # 断点1：检查请求数据
+        phone = data.get('phone')  # 断点2：检查手机号
+        password = data.get('password')  # 断点3：检查密码
         
         # 查找用户
-        user = User.query.filter_by(phone=phone).first()
-        if user and user.check_password(password):
+        user = User.query.filter_by(phone=phone).first()  # 断点4：检查用户查询
+        if user and user.check_password(password):  # 断点5：检查密码验证
             # 记录登录日志
-            log = LoginLog(
+            log = LoginLog(  # 断点6：检查日志记录
                 user_id=user.id,
                 ip_address=request.remote_addr,
                 user_agent=request.user_agent.string,

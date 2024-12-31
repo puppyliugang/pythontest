@@ -1,0 +1,14 @@
+2024-12-31 01:49:17,647 - __main__ - INFO - Application starting...
+2024-12-31 01:49:17,651 - __main__ - INFO - Redis connection successful
+2024-12-31 01:49:17,653 - __main__ - INFO - Starting Flask application...
+2024-12-31 01:49:17,991 - __main__ - INFO - Application starting...
+2024-12-31 01:49:17,994 - __main__ - INFO - Redis connection successful
+2024-12-31 01:49:17,996 - __main__ - INFO - Starting Flask application...
+2024-12-31 01:49:21,709 - __main__ - INFO - Rendering login page
+2024-12-31 01:49:21,743 - __main__ - INFO - Generating new captcha
+2024-12-31 01:49:21,744 - __main__ - DEBUG - Generated captcha text: MZ7Q
+2024-12-31 01:49:21,755 - __main__ - DEBUG - Stored captcha_id in session: 88e9aa89-3fd9-4e34-b508-2eb1a60489f6
+2024-12-31 01:49:21,776 - __main__ - INFO - Captcha generated successfully
+2024-12-31 01:49:43,812 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/api/qrcode/generate
+2024-12-31 01:49:47,233 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/api/qrcode/generate
+2024-12-31 01:49:50,571 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/api/qrcode/generate
