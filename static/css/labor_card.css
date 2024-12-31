@@ -8,6 +8,9 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: #f5f5f5;
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* 顶部导航栏 */
@@ -19,6 +22,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
 }
 
 .back-btn {
@@ -36,10 +40,11 @@ body {
 /* 数字劳工证样式 */
 .digital-id-card {
     background: linear-gradient(135deg, #e6f3ff 0%, #ffffff 100%);
-    margin: 20px;
+    margin: 15px 10px;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 20px);
 }
 
 .card-header {
@@ -91,14 +96,14 @@ body {
 .info-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
 .info-label {
@@ -112,7 +117,7 @@ body {
 }
 
 .card-footer {
-    margin-top: 30px;
+    margin-top: 25px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: end;
@@ -157,4 +162,32 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 12px;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 480px) {
+    .digital-id-card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .id-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+
+    .info-row, .info-grid {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card-footer {
+        margin-top: 20px;
+    }
+
+    .qr-code {
+        width: 70px;
+        height: 70px;
+    }
 } 
