@@ -1,6 +1,0 @@
-2024-12-31 10:35:45,103 - __main__ - INFO - Application starting...
-2024-12-31 10:35:45,108 - __main__ - INFO - Redis connection successful
-2024-12-31 10:35:45,163 - __main__ - INFO - Starting Flask application...
-2024-12-31 10:35:45,178 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
-2024-12-31 10:35:46,885 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
-2024-12-31 10:35:48,894 - __main__ - INFO - Checking QR code status: 50c29ac4-bd71-487e-9ff4-a990f7e03218
