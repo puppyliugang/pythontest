@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="{{ session.get('language', 'zh') }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>卡包</title>
+    <title data-i18n="wallet">卡包</title>
+    <script src="{{ url_for('static', filename='js/i18n.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/wallet.css') }}">
 </head>
 <body>
@@ -14,16 +15,16 @@
                 <span class="arrow-left">&#8592;</span>
             </a>
         </div>
-        <div class="title">卡包</div>
+        <div class="title" data-i18n="wallet">卡包</div>
         <div class="more-btn">&#8230;</div>
     </header>
 
     <!-- 分类导航 -->
     <div class="category-nav">
-        <a href="/wallet/labor" class="nav-item">劳工证</a>
-        <a href="/wallet?type=id" class="nav-item">身份证件</a>
-        <a href="/wallet?type=bank" class="nav-item">银行卡</a>
-        <a href="/wallet?type=ticket" class="nav-item">票据</a>
+        <a href="/wallet/labor" class="nav-item" data-i18n="labor_card">劳工证</a>
+        <a href="/wallet?type=id" class="nav-item" data-i18n="id_documents">身份证件</a>
+        <a href="/wallet?type=bank" class="nav-item" data-i18n="bank_cards">银行卡</a>
+        <a href="/wallet?type=ticket" class="nav-item" data-i18n="tickets">票据</a>
     </div>
 
     <!-- 卡片列表 -->
@@ -31,53 +32,62 @@
         <!-- 身份证卡片 -->
         <div class="card id-card">
             <div class="card-icon">
-                <img src="{{ url_for('static', filename='images/icons/id-card.png') }}" alt="身份证">
+                <img src="{{ url_for('static', filename='images/icons/id-card.png') }}" alt="id_card">
             </div>
             <div class="card-content">
-                <div class="card-title">居民身份证</div>
+                <div class="card-title" data-i18n="id_card">居民身份证</div>
                 <div class="card-number">****************1</div>
             </div>
             <div class="card-actions">
-                <a href="/wallet/id/view" class="action-btn">查看证件</a>
-                <a href="/wallet/id/guide" class="action-btn">办理指南</a>
-                <a href="/wallet/id/services" class="action-btn">更多服务</a>
+                <a href="/wallet/id/view" class="action-btn" data-i18n="view_card">查看证件</a>
+                <a href="/wallet/id/guide" class="action-btn" data-i18n="application_guide">办理指南</a>
+                <a href="/wallet/id/services" class="action-btn" data-i18n="more_services">更多服务</a>
             </div>
         </div>
 
         <!-- 居住证卡片 -->
         <div class="card residence-card">
             <div class="card-icon">
-                <img src="{{ url_for('static', filename='images/icons/residence.png') }}" alt="居住证">
+                <img src="{{ url_for('static', filename='images/icons/residence.png') }}" alt="residence_card">
             </div>
             <div class="card-content">
-                <div class="card-title">居住证</div>
+                <div class="card-title" data-i18n="residence_card">居住证</div>
                 <div class="card-number">************1211</div>
             </div>
             <div class="card-actions">
-                <a href="/wallet/residence/view" class="action-btn">查看证件</a>
+                <a href="/wallet/residence/view" class="action-btn" data-i18n="view_card">查看证件</a>
             </div>
         </div>
 
         <!-- 健康码卡片 -->
         <div class="card health-code">
             <div class="card-icon">
-                <img src="{{ url_for('static', filename='images/icons/health.png') }}" alt="健康码">
+                <img src="{{ url_for('static', filename='images/icons/health.png') }}" alt="health_code">
             </div>
             <div class="card-content">
-                <div class="card-title">健康码</div>
+                <div class="card-title" data-i18n="health_code">健康码</div>
                 <div class="card-number">3*****************1</div>
             </div>
             <div class="card-actions">
-                <a href="/wallet/health/show" class="action-btn">出示健康码</a>
-                <a href="/wallet/health/vaccine" class="action-btn">核酸疫苗</a>
+                <a href="/wallet/health/show" class="action-btn" data-i18n="show_health_code">出示健康码</a>
+                <a href="/wallet/health/vaccine" class="action-btn" data-i18n="vaccine_test">核酸疫苗</a>
             </div>
         </div>
     </div>
 
     <!-- 底部提示 -->
     <div class="bottom-tip">
-        <span>你还可以添加</span>
-        <a href="/wallet/add" class="more-link">更多 ></a>
+        <span data-i18n="can_add_more">你还可以添加</span>
+        <a href="/wallet/add" class="more-link" data-i18n="more">更多 ></a>
     </div>
+
+    <!-- 初始化语言脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLang = document.documentElement.lang || 'zh';
+            console.log('Current language:', currentLang); // 调试用
+            changeLanguage(currentLang);
+        });
+    </script>
 </body>
 </html> 

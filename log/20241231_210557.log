@@ -1,0 +1,6 @@
+2024-12-31 21:05:57,650 - __main__ - INFO - Application starting...
+2024-12-31 21:05:57,655 - __main__ - INFO - Redis connection successful
+2024-12-31 21:05:57,725 - __main__ - INFO - Starting Flask application...
+2024-12-31 21:06:03,956 - __main__ - INFO - Rendering login page
+2024-12-31 21:06:32,382 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png
+2024-12-31 21:06:39,778 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png

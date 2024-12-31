@@ -125,4 +125,37 @@ function startQRCodeStatusCheck(qrcodeId) {
 // 刷新二维码
 function refreshQRCode() {
     generateQRCode();
+}
+
+async function handleLogin(formType) {
+    const form = document.getElementById(`${formType}LoginForm`);
+    const phone = form.querySelector('input[name="phone"]').value;
+    const password = form.querySelector('input[name="password"]').value;
+    const selectedLanguage = document.getElementById('languageSelect').value;
+
+    try {
+        const response = await fetch('/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                phone: phone,
+                password: password,
+                language: selectedLanguage
+            })
+        });
+
+        const data = await response.json();
+        if (data.success) {
+            window.location.href = '/dashboard';
+        } else {
+            // 使用 i18n.js 中的翻译
+            alert(translations[currentLanguage][data.message] || translations[currentLanguage]['login_failed']);
+        }
+    } catch (error) {
+        console.error('登录失败:', error);
+        // 使用 i18n.js 中的翻译
+        alert(translations[currentLanguage]['server_error']);
+    }
 } 

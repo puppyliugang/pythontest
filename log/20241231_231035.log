@@ -1,0 +1,44 @@
+2024-12-31 23:10:35,548 - __main__ - INFO - Application starting...
+2024-12-31 23:10:35,552 - __main__ - INFO - Redis connection successful
+2024-12-31 23:10:35,619 - __main__ - INFO - Starting Flask application...
+2024-12-31 23:10:39,938 - __main__ - INFO - Rendering login page
+2024-12-31 23:10:41,075 - __main__ - INFO - Generating QR code
+2024-12-31 23:10:41,095 - __main__ - INFO - QR code generated successfully
+2024-12-31 23:10:43,109 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:10:44,346 - __main__ - INFO - Generating QR code
+2024-12-31 23:10:44,357 - __main__ - INFO - QR code generated successfully
+2024-12-31 23:10:45,113 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:10:46,379 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:10:47,112 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:10:48,363 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:10:49,101 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:10:50,364 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:10:51,102 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:10:52,383 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:10:53,102 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:10:54,375 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:10:55,112 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:10:58,283 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 23:10:58,284 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 23:10:58,286 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 23:11:01,783 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:11:01,785 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:11:02,364 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:11:03,106 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:11:04,370 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:11:59,899 - __main__ - INFO - Checking QR code status: a91eb97d-4552-4edd-bafd-2fd6a7681702
+2024-12-31 23:11:59,900 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:12:00,365 - __main__ - INFO - Checking QR code status: 47a36545-64ba-4cf3-9a25-ed1324e8ae04
+2024-12-31 23:12:00,704 - __main__ - INFO - Rendering login page
+2024-12-31 23:12:01,210 - __main__ - INFO - Rendering login page
+2024-12-31 23:12:01,428 - __main__ - INFO - Rendering login page
+2024-12-31 23:12:01,637 - __main__ - INFO - Rendering login page
+2024-12-31 23:12:01,865 - __main__ - INFO - Rendering login page
+2024-12-31 23:20:15,247 - __main__ - INFO - Rendering login page
+2024-12-31 23:21:18,181 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 23:21:18,182 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 23:21:18,183 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 23:21:24,367 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/id-card.png
+2024-12-31 23:21:24,369 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/residence.png
+2024-12-31 23:21:24,371 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/icons/health.png
+2024-12-31 23:26:31,845 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/static/images/qr-code.png

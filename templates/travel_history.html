@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="{{ session.get('language', 'zh') }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>出入境记录</title>
+    <title data-i18n="travel_history">出入境记录</title>
+    <script src="{{ url_for('static', filename='js/i18n.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/travel_history.css') }}">
 </head>
 <body>
@@ -21,15 +22,15 @@
                 <h2 class="name">KYAW SOE THU</h2>
                 <div class="details">
                     <div class="detail-row">
-                        <span class="label">Passport No</span>
+                        <span class="label" data-i18n="passport_no">护照号</span>
                         <span class="value">MA2387403</span>
                     </div>
                     <div class="detail-row">
-                        <span class="label">OWIC No.</span>
+                        <span class="label" data-i18n="labor_card_no">劳工证编号</span>
                         <span class="value">MM897655</span>
                     </div>
                     <div class="detail-row">
-                        <span class="label">Expiry Date</span>
+                        <span class="label" data-i18n="expiry_date">过期日期</span>
                         <span class="value">30.08.2028</span>
                     </div>
                 </div>
@@ -39,26 +40,26 @@
 
     <!-- 出入境历史记录 -->
     <div class="history-section">
-        <h3 class="section-title">出入境历史记录</h3>
+        <h3 class="section-title" data-i18n="travel_history">出入境历史记录</h3>
         <div class="history-table">
             <table>
                 <thead>
                     <tr>
-                        <th>出入境日期</th>
-                        <th>出入境方向</th>
-                        <th>国家</th>
+                        <th data-i18n="travel_date">出入境日期</th>
+                        <th data-i18n="travel_direction">出入境方向</th>
+                        <th data-i18n="country">国家</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>2024-01-02 15:03:05</td>
-                        <td>出境</td>
-                        <td>中国</td>
+                        <td data-i18n="exit">出境</td>
+                        <td data-i18n="china">中国</td>
                     </tr>
                     <tr>
                         <td>2024-01-05 15:03:05</td>
-                        <td>入境</td>
-                        <td>缅甸</td>
+                        <td data-i18n="entry">入境</td>
+                        <td data-i18n="myanmar">缅甸</td>
                     </tr>
                 </tbody>
             </table>
@@ -69,37 +70,47 @@
     <div class="bottom-buttons">
         <button class="action-btn scan">
             <span class="icon">📷</span>
-            Scan
+            <span data-i18n="scan">扫描</span>
         </button>
         <button class="action-btn qr">
             <span class="icon">🔲</span>
-            My QR
+            <span data-i18n="my_qr">我的二维码</span>
         </button>
     </div>
 
+    <!-- 底部导航 -->
     <nav class="bottom-nav">
         <a href="/dashboard" class="nav-item">
             <div class="nav-icon home"></div>
-            <div class="nav-name">主页</div>
+            <div class="nav-name" data-i18n="home">主页</div>
         </a>
         <a href="/travel" class="nav-item active">
             <div class="nav-icon travel"></div>
-            <div class="nav-name">出入境</div>
+            <div class="nav-name" data-i18n="immigration">出入境</div>
         </a>
         <a href="/transfer" class="nav-item">
             <div class="nav-icon transfer"></div>
-            <div class="nav-name">汇款</div>
+            <div class="nav-name" data-i18n="transfer">汇款</div>
         </a>
         <a href="/messages" class="nav-item">
             <div class="nav-icon message">
                 <span class="badge">5</span>
             </div>
-            <div class="nav-name">消息</div>
+            <div class="nav-name" data-i18n="messages">消息</div>
         </a>
         <a href="/profile" class="nav-item">
             <div class="nav-icon profile"></div>
-            <div class="nav-name">我的</div>
+            <div class="nav-name" data-i18n="my_profile">我的</div>
         </a>
     </nav>
+
+    <!-- 初始化语言脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLang = document.documentElement.lang || 'zh';
+            console.log('Current language:', currentLang); // 调试用
+            changeLanguage(currentLang);
+        });
+    </script>
 </body>
 </html> 
