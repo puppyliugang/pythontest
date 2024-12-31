@@ -140,8 +140,12 @@ def login():
         language = data.get('language', 'en')  # 断点4：检查语言
 
         # 查找用户
-        user = User.query.filter_by(phone=phone).first()  # 断点4：检查用户查询
-        if user and user.check_password(password):  # 断点5：检查密码验证
+        user = User.query.filter_by(phone=phone).first()
+        if user and user.check_password(password):
+            # 更新用户的语言选择
+            user.language = language  # 更新用户语言设置
+            db.session.add(user)  # 标记更新
+            
             # 记录登录日志
             log = LoginLog(  # 断点6：检查日志记录
                 user_id=user.id,
@@ -157,8 +161,10 @@ def login():
             user.last_login = datetime.utcnow()
             db.session.commit()
             
-            # 设置session
+            # 设置会话
             session['user_id'] = user.id
+            session['language'] = language  # 同时更新会话中的语言设置
+            
             if data.get('remember'):
                 session.permanent = True
                 
