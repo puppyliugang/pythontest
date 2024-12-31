@@ -1,0 +1,160 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* 顶部导航栏 */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.back-btn {
+    width: 24px;
+    height: 24px;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 数字劳工证样式 */
+.digital-id-card {
+    background: linear-gradient(135deg, #e6f3ff 0%, #ffffff 100%);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-header h1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card-header h2 {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.card-header h3 {
+    font-size: 14px;
+    color: #666;
+}
+
+.photo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.id-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info {
+    padding: 0 15px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.info-label {
+    color: #666;
+    font-size: 14px;
+}
+
+.info-value {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card-footer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: end;
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666;
+}
+
+.qr-code {
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+}
+
+.qr-code img {
+    width: 100%;
+    height: 100%;
+}
+
+.verified-badge {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #00b894;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.verified-icon {
+    background: #00b894;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+} 

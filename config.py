@@ -44,10 +44,11 @@ QRCODE_CONFIG = {
 
 # 验证码配置
 CAPTCHA_CONFIG = {
+    'WIDTH': 120,
+    'HEIGHT': 40,
+    'EXPIRE_TIME': 300,  # 5分钟过期
     'LENGTH': 4,
-    'WIDTH': 160,
-    'HEIGHT': 60,
-    'EXPIRE_TIME': 300
+    'FONT_SIZE': 30
 }
 
 # 测试账号配置

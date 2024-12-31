@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出入境记录</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/travel_history.css') }}">
+</head>
+<body>
+    <!-- 顶部个人信息卡片 -->
+    <div class="profile-card">
+        <div class="qr-code">
+            <img src="{{ url_for('static', filename='images/qr-code.png') }}" alt="QR码">
+        </div>
+        <div class="profile-info">
+            <div class="photo-section">
+                <img src="{{ url_for('static', filename='images/avatars/default-avatar.jpg') }}" alt="证件照" class="profile-photo">
+                <div class="id-number">MM897655</div>
+            </div>
+            <div class="info-section">
+                <h2 class="name">KYAW SOE THU</h2>
+                <div class="details">
+                    <div class="detail-row">
+                        <span class="label">Passport No</span>
+                        <span class="value">MA2387403</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">OWIC No.</span>
+                        <span class="value">MM897655</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Expiry Date</span>
+                        <span class="value">30.08.2028</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 出入境历史记录 -->
+    <div class="history-section">
+        <h3 class="section-title">出入境历史记录</h3>
+        <div class="history-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>出入境日期</th>
+                        <th>出入境方向</th>
+                        <th>国家</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-01-02 15:03:05</td>
+                        <td>出境</td>
+                        <td>中国</td>
+                    </tr>
+                    <tr>
+                        <td>2024-01-05 15:03:05</td>
+                        <td>入境</td>
+                        <td>缅甸</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 底部按钮 -->
+    <div class="bottom-buttons">
+        <button class="action-btn scan">
+            <span class="icon">📷</span>
+            Scan
+        </button>
+        <button class="action-btn qr">
+            <span class="icon">🔲</span>
+            My QR
+        </button>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="/dashboard" class="nav-item">
+            <div class="nav-icon home"></div>
+            <div class="nav-name">主页</div>
+        </a>
+        <a href="/travel" class="nav-item active">
+            <div class="nav-icon travel"></div>
+            <div class="nav-name">出入境</div>
+        </a>
+        <a href="/transfer" class="nav-item">
+            <div class="nav-icon transfer"></div>
+            <div class="nav-name">汇款</div>
+        </a>
+        <a href="/messages" class="nav-item">
+            <div class="nav-icon message">
+                <span class="badge">5</span>
+            </div>
+            <div class="nav-name">消息</div>
+        </a>
+        <a href="/profile" class="nav-item">
+            <div class="nav-icon profile"></div>
+            <div class="nav-name">我的</div>
+        </a>
+    </nav>
+</body>
+</html> 

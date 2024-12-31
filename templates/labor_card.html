@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>劳工证</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/labor_card.css') }}">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="back-btn">
+            <a href="/wallet">
+                <span class="arrow-left">&#8592;</span>
+            </a>
+        </div>
+        <div class="title">劳工证</div>
+        <div class="more-btn">&#8230;</div>
+    </header>
+
+    <!-- 数字劳工证 -->
+    <div class="digital-id-card">
+        <div class="card-header">
+            <h1>REPUBLIC OF THE UNION OF MYANMAR</h1>
+            <h2>MINISTRY OF LABOUR</h2>
+            <h3>Overseas Worker Digital ID</h3>
+        </div>
+
+        <div class="photo-container">
+            <img src="{{ url_for('static', filename='images/avatars/default-avatar.jpg') }}" alt="证件照" class="id-photo">
+        </div>
+
+        <div class="personal-info">
+            <h2 class="name">KYAW SOE THU</h2>
+            
+            <div class="info-row">
+                <div class="info-label">Father Name</div>
+                <div class="info-value">U NAING AUNG</div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-column">
+                    <div class="info-label">Gender</div>
+                    <div class="info-value">MALE</div>
+                </div>
+                <div class="info-column">
+                    <div class="info-value">MM897655</div>
+                </div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Passport No</div>
+                <div class="info-value">MA2387403</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">OWIC No.</div>
+                <div class="info-value">MM897655</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Expiry Date</div>
+                <div class="info-value">30.08.2028</div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <div class="signatures">
+                <div class="signature">Director General</div>
+                <div class="signature">Cardholder's Signature</div>
+            </div>
+            <div class="qr-code">
+                <img src="{{ url_for('static', filename='images/qr-code.png') }}" alt="QR Code">
+            </div>
+            <div class="verified-badge">
+                <span class="verified-icon">✓</span>
+                <span class="verified-text">Verified</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

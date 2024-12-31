@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <!-- 顶部搜索栏 -->
+    <header class="header">
+        <div class="location">
+            仰光 <span class="arrow-down">▼</span>
+        </div>
+        <div class="search-bar">
+            <input type="search" placeholder="我的劳工证">
+            <button class="search-btn">搜索</button>
+        </div>
+        <div class="add-btn">+</div>
+    </header>
+
+    <!-- 用户信息卡片 -->
+    <div class="user-card">
+        <div class="user-info">
+            <div class="avatar">
+                <img src="{{ url_for('static', filename='images/avatars/default-avatar.jpg') }}" alt="头像">
+            </div>
+            <div class="user-details">
+                <div class="phone">{{ user.phone }}</div>
+                <div class="balance">余额:******<span class="check">查看</span></div>
+                <div class="verified">已实名认证</div>
+            </div>
+            <div class="qr-code-btn">我的二维码</div>
+        </div>
+    </div>
+
+    <!-- 功能按钮组 -->
+    <div class="feature-grid">
+        <a href="/wallet" class="feature-item">
+            <div class="feature-icon wallet"></div>
+            <div class="feature-name">卡包</div>
+        </a>
+        <a href="/transfer" class="feature-item">
+            <div class="feature-icon transfer"></div>
+            <div class="feature-name">汇款</div>
+        </a>
+        <div class="feature-item">
+            <div class="feature-icon receive"></div>
+            <div class="feature-name">收钱</div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon scan"></div>
+            <div class="feature-name">扫一扫</div>
+        </div>
+    </div>
+
+    <!-- 劳工证预览卡片 -->
+    <div class="labor-card-preview">
+        <a href="/wallet/labor" class="preview-card">
+            <div class="card-header">
+                <img src="{{ url_for('static', filename='images/icons/myanmar-emblem.png') }}" alt="缅甸国徽" class="emblem">
+                <div class="header-text">
+                    <h3>REPUBLIC OF THE UNION OF MYANMAR</h3>
+                    <h4>MINISTRY OF LABOUR</h4>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="photo-area">
+                    <img src="{{ url_for('static', filename='images/avatars/default-avatar.jpg') }}" alt="证件照" class="id-photo">
+                </div>
+                <div class="info-area">
+                    <div class="name">KYAW SOE THU</div>
+                    <div class="id-number">MM897655</div>
+                    <div class="expiry">有效期至：30.08.2028</div>
+                </div>
+                <div class="verified-badge">
+                    <span class="verified-icon">✓</span>
+                    <span>已认证</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <nav class="bottom-nav">
+        <a href="/dashboard" class="nav-item active">
+            <div class="nav-icon home"></div>
+            <div class="nav-name">主页</div>
+        </a>
+        <a href="/travel" class="nav-item">
+            <div class="nav-icon travel"></div>
+            <div class="nav-name">出入境</div>
+        </a>
+        <a href="/transfer" class="nav-item">
+            <div class="nav-icon transfer"></div>
+            <div class="nav-name">汇款</div>
+        </a>
+        <a href="/messages" class="nav-item">
+            <div class="nav-icon message">
+                <span class="badge">5</span>
+            </div>
+            <div class="nav-name">消息</div>
+        </a>
+        <a href="/profile" class="nav-item">
+            <div class="nav-icon profile"></div>
+            <div class="nav-name">我的</div>
+        </a>
+    </nav>
+</body>
+</html> 

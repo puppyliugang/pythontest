@@ -1,0 +1,205 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* 顶部导航栏 */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.back-btn {
+    width: 24px;
+    height: 24px;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.more-btn {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+/* 分类导航 */
+.category-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.nav-item {
+    font-size: 15px;
+    color: #666;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.nav-item.active {
+    color: #007AFF;
+}
+
+.nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #007AFF;
+}
+
+/* 卡片列表 */
+.card-list {
+    padding: 0 15px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.card-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.card-number {
+    color: #666;
+    font-size: 14px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.card-actions span {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 特定卡片样式 */
+.id-card {
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+}
+
+.residence-card {
+    background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);
+}
+
+.health-code {
+    background: linear-gradient(135deg, #E3F2FD 0%, #90CAF9 100%);
+}
+
+/* 底部提示 */
+.bottom-tip {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.more-link {
+    color: #007AFF;
+    cursor: pointer;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
+
+/* 添加链接样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 导航项链接 */
+.nav-item {
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+/* 卡片操作按钮 */
+.action-btn {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 卡片整体可点击 */
+.card {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 更多链接样式 */
+.more-link {
+    color: #007AFF;
+    cursor: pointer;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+} 

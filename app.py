@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, session, send_file, render_template
+from flask import Flask, jsonify, request, session, send_file, render_template, redirect, url_for
 import redis
 import qrcode
 import base64
@@ -54,9 +54,21 @@ except redis.ConnectionError as e:
     logger.error(traceback.format_exc())
     raise
 
-# 初始化验证码生成器
-image_captcha = ImageCaptcha(width=CAPTCHA_CONFIG['WIDTH'], 
-                           height=CAPTCHA_CONFIG['HEIGHT'])
+# 使用 Windows 系统自带的字体
+FONT_PATH = "C:\\Windows\\Fonts\\Arial.ttf"  # Windows 系统字体路径
+
+# 确保字体文件存在
+if not os.path.exists(FONT_PATH):
+    # 如果 Arial 不存在，尝试使用其他系统字体
+    FONT_PATH = "C:\\Windows\\Fonts\\simhei.ttf"  # 使用黑体作为备选
+
+# 创建验证码生成器实例
+image_captcha = ImageCaptcha(
+    width=120,
+    height=40,
+    fonts=[FONT_PATH],  # 使用系统字体
+    font_sizes=(30,)
+)
 
 # 初始化数据库
 db.init_app(app)
@@ -90,11 +102,9 @@ def get_captcha():
         # 生成随机的验证码 ID
         captcha_id = str(uuid.uuid4())
         
-        # 生成随机验证码
-        captcha_text = ''.join(random.choices(
-            string.ascii_uppercase + string.digits, 
-            k=CAPTCHA_CONFIG['LENGTH']
-        ))
+        # 生成随机验证码（4位数字和大写字母的组合）
+        characters = string.digits + string.ascii_uppercase
+        captcha_text = ''.join(random.choices(characters, k=4))
         
         logger.debug(f"Generated captcha text: {captcha_text}")
         
@@ -107,7 +117,6 @@ def get_captcha():
         
         # 将验证码 ID 存入 session
         session['captcha_id'] = captcha_id
-        logger.debug(f"Stored captcha_id in session: {captcha_id}")
         
         # 生成验证码图片
         image = image_captcha.generate(captcha_text)
@@ -129,21 +138,6 @@ def login():
         phone = data.get('phone')
         password = data.get('password')
         
-        # 验证验证码
-        captcha_id = session.get('captcha_id')
-        if not captcha_id:
-            return jsonify({
-                'success': False,
-                'message': 'invalid_captcha'
-            })
-        
-        stored_captcha = redis_client.get(f'captcha:{captcha_id}')
-        if not stored_captcha or stored_captcha.decode().lower() != data.get('verificationCode', '').lower():
-            return jsonify({
-                'success': False,
-                'message': 'invalid_captcha'
-            })
-            
         # 查找用户
         user = User.query.filter_by(phone=phone).first()
         if user and user.check_password(password):
@@ -322,6 +316,88 @@ def check_qrcode(qrcode_id):
             'success': False,
             'error': str(e)
         }), 500
+
+@app.route('/dashboard')
+def dashboard():
+    # 检查用户是否登录
+    if 'user_id' not in session:
+        return redirect(url_for('index'))
+        
+    # 获取用户信息
+    user = User.query.get(session['user_id'])
+    if not user:
+        session.clear()
+        return redirect(url_for('index'))
+        
+    return render_template('dashboard.html', user=user)
+
+@app.route('/wallet')
+@app.route('/wallet/<type>')
+def wallet(type=None):
+    if 'user_id' not in session:
+        return redirect(url_for('index'))
+    
+    user = User.query.get(session['user_id'])
+    if not user:
+        session.clear()
+        return redirect(url_for('index'))
+    
+    # 如果是劳工证类型，重定向到劳工证页面
+    if type == 'labor':
+        return redirect(url_for('labor_card'))
+        
+    return render_template('wallet.html', user=user, active_type=type or 'id')
+
+@app.route('/wallet/add')
+def wallet_add():
+    if 'user_id' not in session:
+        return redirect(url_for('index'))
+    return render_template('wallet/add.html')
+
+@app.route('/wallet/labor')
+def labor_card():
+    if 'user_id' not in session:
+        return redirect(url_for('index'))
+    return render_template('labor_card.html')
+
+@app.route('/travel')
+def travel_history():
+    if 'user_id' not in session:
+        return redirect(url_for('index'))
+    
+    # 这里可以从数据库获取真实的出入境记录
+    travel_records = [
+        {
+            'date': '2024-01-02 15:03:05',
+            'direction': '出境',
+            'country': '中国'
+        },
+        {
+            'date': '2024-01-05 15:03:05',
+            'direction': '入境',
+            'country': '缅甸'
+        }
+    ]
+    
+    return render_template('travel_history.html', records=travel_records)
+
+@app.route('/transfer')
+def transfer():
+    if 'user_id' not in session:
+        return redirect(url_for('index'))
+    return "汇款功能开发中..."
+
+@app.route('/messages')
+def messages():
+    if 'user_id' not in session:
+        return redirect(url_for('index'))
+    return "消息功能开发中..."
+
+@app.route('/profile')
+def profile():
+    if 'user_id' not in session:
+        return redirect(url_for('index'))
+    return "个人资料功能开发中..."
 
 if __name__ == '__main__':
     logger.info("Starting Flask application...")

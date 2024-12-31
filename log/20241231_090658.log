@@ -293,3 +293,14 @@ AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
 2024-12-31 09:12:56,888 - __main__ - INFO - Checking QR code status: 2c6c2f97-215b-435a-9a0d-8f0c6be69795
 2024-12-31 09:12:56,889 - __main__ - INFO - Checking QR code status: c73e7be0-51b3-4cad-9a85-e29a76296eb9
 2024-12-31 09:13:56,899 - __main__ - INFO - Checking QR code status: 9086c76f-035a-45a3-bfdb-bd016becaef3
+2024-12-31 09:36:10,504 - __main__ - INFO - Generating new captcha
+2024-12-31 09:36:10,504 - __main__ - DEBUG - Generated captcha text: D4W1
+2024-12-31 09:36:10,504 - __main__ - DEBUG - Stored captcha_id in session: 29fd0596-0799-4a2e-95b7-1da3c7b28751
+2024-12-31 09:36:10,507 - __main__ - INFO - Captcha generated successfully
+2024-12-31 09:36:12,982 - __main__ - ERROR - Login failed: 'str' object has no attribute 'decode'
+2024-12-31 09:36:12,984 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\cursortest\test1\app.py", line 141, in login
+    if not stored_captcha or stored_captcha.decode().lower() != data.get('verificationCode', '').lower():
+                             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+

@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = {
                 phone: document.getElementById('phone').value,
                 password: document.getElementById('password').value,
-                verificationCode: document.getElementById('verificationCode').value,
                 remember: document.getElementById('remember').checked
             };
 
@@ -49,9 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const data = await response.json();
                 if (data.success) {
-                    alert(getTranslation('login_success'));
+                    // 登录成功后直接跳转到仪表板页面
                     window.location.href = '/dashboard';
                 } else {
+                    // 显示错误消息
                     alert(getTranslation(data.message) || getTranslation('login_failed'));
                 }
             } catch (error) {
